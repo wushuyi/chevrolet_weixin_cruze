@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>全新科鲁兹</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;	
+}
+input:focus{
+	outline:none;		
+}
+body{
+	font-family:"Microsoft Yahei";
+	margin:0;
+	padding:0;	
+	color:#444;
+	background:#eee;
+	}
+	
+html,div,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,embed,label{border:0;margin:0;padding:0;font-weight:normal;font-family:"Microsoft Yahei";}
+fieldset,img{border:none}
+object,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block;}
+ol,ul,menu{ list-style:none;} 
+select,input{ vertical-align:middle;}
+::-moz-placeholder{font-family:"Microsoft Yahei";}             
+::-webkit-input-placeholder{font-family:"Microsoft Yahei"; font-size:14px;}   
+::-ms-input-placeholder{font-family:"Microsoft Yahei";}
+a {
+	text-decoration:none;
+	color:#444;
+	outline:none;blr:expression(this.onFocus=this.blur());
+}
+hr{
+	border:none;
+	border-top:1px solid #ccc;
+	height:0;
+}
+p, h1, h2, h3, h4, h5 {
+	letter-spacing: 0.5px;
+}
+#container{
+	min-width:320px;
+	margin:0 auto;
+		
+}
+#conten{
+	padding:30px 0;
+	overflow:hidden;
+	text-align:center;
+	vertical-align:middle;	
+}
+#conten img{
+	max-width:90%;	
+}
+.from{
+	margin:20px 0;
+	overflow:hidden;
+	text-align:left;
+	width:340px;	
+}
+.text{
+	font-size:24px;
+	margin:0 0 3px 25px;	
+}
+.input-word{
+	background:#eee;
+	border:1px solid #544e4e;
+	line-height:30px;
+	height:30px;
+	width:200px;
+	padding:0 5px;	
+}
+.text-right{
+	text-align:center;
+	font-size:16px;
+	margin:5px 1px 15px 0;	
+}
+.text-btn{
+	margin:0 0 3px 30px;
+}
+.confirm,.cancel{
+	padding:5px 10px;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	background:#0dac69;
+	border:none;
+	border-radius:3px;
+	cursor:pointer;
+	margin:0 5px;	
+}
+.cancel{
+	background:#ea5513;	
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="conten">
+    <img src="Chevrolet/form.png">
+    <div class="from">
+    <p class="text">姓名</p>
+    <p class="text">
+    <input type="text" class="input-word" placeholder="请输入您的姓名">
+    </p>
+    <p class="text">地址</p>
+    <p class="text">
+    <input type="text" class="input-word" placeholder="请输入您的地址信息">
+    </p>    
+    <p class="text">手机</p>
+    <p class="text">
+    <input type="text" class="input-word" placeholder="请输入您的手机号">
+    </p>
+    <p class="text">电子邮件地址</p>
+    <p class="text">
+    <input type="email" class="input-word" placeholder="请输入您的电子邮件地址">
+    </p>  
+    <p class="text-right">*以上各项为必填项</p> 
+    <p class="text-btn">
+    <input type="button" class="confirm" value="确定">
+    <input type="button" class="cancel" value="取消">
+    </p> 
+    </div>
+    </div>
+</div>
+</body>
+</html>

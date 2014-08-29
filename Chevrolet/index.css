@@ -1,0 +1,238 @@
+@charset "utf-8";
+/*******************************
+ * Copyright:智讯互动(www.zhixunhudong.com)
+ * Author:Mr.Think
+ * Description:移动端通用基础CSS
+ *******************************/
+*{margin:0;padding:0}
+body{font-size:13px;font-family:arial;-webkit-text-size-adjust:none;line-height:1.62;background-color: #000}
+body,html{overflow:hidden;overflow-y:auto;}
+table{border-collapse:collapse;border-spacing:0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+ul,ol,li{list-style:none;}
+em{font-style:normal}
+img{border:none;}
+input,img{vertical-align:middle;}
+q:before, q:after { content:'' }
+.fn-clear:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.fn-clear{*zoom:1}
+a{color:#666;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:active{color:#333;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+section,aside,header,footer,hgroup,article{display:block}
+/*网页样式重置reset*/
+html { font-size:1em;-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight:rgba(0,0,0,0);-webkit-text-size-adjust:none;}
+body { font-size:0.75em}
+label { cursor:pointer}
+a:link, a:visited { text-decoration:none}
+input,button,select,textarea{outline:none} textarea{resize:none;}
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, menu, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, var { margin:0; padding:0}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption { display: block} /*html5设置*/
+
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea, sub{ font-size:1em}
+body, input, button, select, textarea, sub{ font-family:Arial, sans-serif}
+em, cite, address, optgroup { font-style:normal}
+kbd, samp, code { font-family:monospace}
+
+img, input, button, select, textarea { vertical-align:middle}
+ul, ol { list-style:none}
+img, fieldset { border:0}
+abbr, acronym { cursor:help; border-bottom:1px dotted black}
+table {	width:100%; border-spacing:0; border:0}
+table th, table td { border:0}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0}
+legend, hr, caption { visibility:hidden; font-size:0; width:0; height:0; line-height:0}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*统一样式*/
+html { width: 100%; height: 100%; }
+body { margin:0 auto; width:100%;font-family:"微软雅黑";background-size: auto; }
+body {height: 100%; overflow: hidden;}
+
+/*模块 m-*/
+.m-page { position:absolute; left:0; top:0%; height:100%; width:100%}
+.m-page.show { z-index:10; display:block; }
+.m-page.hide { z-index:5; display:none; }
+.m-page.active { z-index:15; display:block; }
+.m-img { width:100%; height:100%;background-size:cover!important}
+.m-img img{max-width:100%;position:absolute;display:none;}
+.next-page{position: absolute;left: 50%;margin-left: -119px;width: 238px;height: 42px;top:50%;background-color: transparent;margin-top: 120px;z-index: 99999}
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+/* by my*/
+img.arrow{
+	width:30px;
+	height:33px;
+	display:block;
+	-webkit-animation: start 1.5s infinite ease-in-out;
+	position:absolute;
+	bottom:3%;	
+	left:45%;
+}
+
+img.animated-img{
+	position:absolute;
+	display:block;
+	-webkit-animation:moves 1s ease-in;
+	-webkit-transform:translateX(22%);
+	left:0;
+	top:55%;
+}
+img.font-2,img.font-3{
+	display:block;
+	position:absolute;
+	left:8%;
+	-webkit-transform:translateY(-10px);	
+}
+img.font-2{
+	-webkit-animation:txt 1s ease-in-out;
+	top:10%;	
+}
+img.font-3{
+	-webkit-animation:txt 1.5s ease-in-out;
+	top:20%;
+}
+.con-4{
+	top:1%;
+	-webkit-animation:slideUp 1s ease-in-out;	
+}
+img.con-5{
+	-webkit-animation:a 1.2s ease-in;
+	opacity:1;	
+	top:1%;
+		
+}
+.p6-layout{
+	overflow:hidden;
+	padding:12% 0 0 0;	
+}
+.p6-layout ul li{
+	margin:5px;	
+}
+.p6-layout ul li a{
+	position:relative;
+	display:block;	
+	padding:6% 0;	
+}	
+.p6-layout ul li a:hover{
+	-webkit-transform:translateX(10px);
+	-webkit-transition:all 0.8s;		
+}
+.p6-layout ul li a.btn-hover{
+	background:url(list-1.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover:hover{
+	background:url(list-1-hover.jpg) no-repeat 0 0;
+	background-size:cover;
+}
+.p6-layout ul li a.btn-hover-1{
+	background:url(list-2.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-1:hover{
+	background:url(list-2-hover.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-2{
+	background:url(list-3.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-2:hover{
+	background:url(list-3-hover.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-3{
+	background:url(list-4.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-3:hover{
+	background:url(list-4-hover.jpg) no-repeat 0 0;
+	background-size:cover;
+}
+.p6-layout ul li a.btn-hover-4{
+	background:url(list-5.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-4:hover{
+	background:url(list-5-hover.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-5{
+	background:url(list-6.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+.p6-layout ul li a.btn-hover-5:hover{
+	background:url(list-6-hover.jpg) no-repeat 0 0;
+	background-size:cover;	
+}
+@-webkit-keyframes moves{
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(0);	
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateX(20%);					
+	}
+}
+@-webkit-keyframes slideUp{
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(-40%);	
+	}
+	100%{
+		-webkit-transform:translateY(0);	
+	}
+}
+@-webkit-keyframes a{
+	0%{
+		opacity:0	
+	}
+	100%{
+		opacity:1;	
+	}
+}
+@-webkit-keyframes txt{
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(0);		
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(-10px);	
+	}
+}
+
+@-webkit-keyframes start {
+	0%,30% {opacity: 0;-webkit-transform: translate(0,10px);}
+	60% {opacity: 1;-webkit-transform: translate(0,0);}
+	100% {opacity: 0;-webkit-transform: translate(0,-10px);}
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
