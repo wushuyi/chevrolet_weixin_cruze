@@ -204,8 +204,39 @@ $(function(){
 		})
     });
 })
-
 </script>
+<!-- 统计代码 -->
+<script src="http://m.chevrolet.com.cn/js/mz_m.js"></script>
+<script>
+$(document).ready(function(){
+	mz.pgName = '手机端-科鲁兹D2上市-微信专题';
+	mz.pv(mz.pgName+'-首页');
+	$('.p6-layout a').each(function(i){
+		var $self = $(this),
+			index = i,
+			href = $self.attr('href');
+		var mzName = [
+			'重新认识你',
+			'轻巧强劲融于一身',
+			'身轻不柔弱',
+			'配置更丰富',
+			'新视野',
+			'越品味越喜欢',
+			'预约试驾'
+		];
+		$self.on('click', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			mz.click(mz.pgName + '-' + mzName[index]);
+			
+			setTimeout(function(){
+				location.href = href;
+			}, 300);
+		});
+	});
+});
+</script>
+<script type="text/javascript" async="" src="http://www.chevrolet.com.cn/brandsite/js/ga.js"></script>
 <script src="http://s19.cnzz.com/z_stat.php?id=1252944870&web_id=1252944870"></script>
-
-</body></html>
+</body>
+</html>
